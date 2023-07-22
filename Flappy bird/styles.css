@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    overflow: hidden; 
+}
+
+#bird {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background-color: #FF5733;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
+.pipe {
+  position: absolute;
+  width: 60px;
+
+}
+
+.pipe-top {
+  height: 350px;
+  background-color: #4CAF50;
+  top: 0;
+}
+
+.pipe-bottom {
+  height: 350px;
+  background-color: #4CAF50;
+  bottom: 0;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #000;
+}
+
+/* Styles for the game-over screen */
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#game-over.hidden {
+  display: none;
+}
+
+#game-over h1 {
+  font-size: 40px;
+  color: #FF5733;
+  margin-bottom: 10px;
+}
+
+#game-over p {
+  font-size: 24px;
+  color: #000;
+}
+
+#play-again-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+}
